@@ -1,0 +1,31 @@
+<DOCTYPE html>
+<html>
+<style type="text/css">
+	table,th,td{border: 1px solid black}
+	th {color: blue; background-color: brown}
+</style>
+<head>
+<script src ="D:\angularjs\angular.min.js">
+</script>
+</head>
+<body ng-App="" ng-init="employee=[{empId : 'e001', empName : 'Ram', empBasicPay : '10000'},{empId : 'e002', empName : 'Aman', empBasicPay : '20000'},{empId : 'e003', empName : 'Raman', empBasicPay : '30000'}]"/>
+        
+
+        <table>
+        	<tr>
+        		<th>Employee Id</th>
+        		<th>Employee Name</th>
+        		<th>Employee Basicpay</th>
+        	</tr>
+                <tr ng-repeat = "emp in employee">
+
+        		 <td>{{emp.empId}}</td>
+        		 <td>{{emp.empName}}</td>
+        		 <td>{{emp.empBasicPay}}</td>
+        	</tr>
+        </table>
+
+
+          
+</body>
+</html>
